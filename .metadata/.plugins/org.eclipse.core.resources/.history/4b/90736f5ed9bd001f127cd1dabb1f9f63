@@ -1,0 +1,28 @@
+package com.sathya.sprinbootmvc.entity;
+
+import org.springframework.data.annotation.Id;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class ProductEntity {
+	@Id
+		private String Name;
+		private String brand;
+		private long id;
+		private String madein;
+		private int quatity;
+		private double price;
+		private double taxrate;
+		private double offerprice;
+		private double stockvalue;
+		private double Discountprice;
+		private double discountrate;
+		private double finalrate;
+}

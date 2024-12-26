@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <title>Edit employee</title>
+</head>
+<body>
+    <h2>Edit employee</h2>
+    <form th:action="@{/editproductsave}" th:object="${product}" method="post">
+        <label for="name">Id</label>
+        <input type="text"  name="name" th:field="*{name}" > <br><br>
+        <label for="brand">Name</label>
+        <input type="text"  name="brand" th:field="*{brand}" > <br><br>
+        <label for="price">Dob</label>
+        <input type="number"  name="price" th:field="*{price}"  > <br><br>
+        <label for="discountPrice">salary</label>
+        <input type="number" name="discountPrice" th:field="*{discountprice}" > <br><br>
+        <label for="quantity">Gendery</label>
+        <input type="number" name="quantity" th:field="*{quantity}" > <br><br>
+        <label for="taxPrice">Department</label>
+        <input type="number"  name="taxPrice" th:field="*{taxprice}"  > <br><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

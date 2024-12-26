@@ -1,0 +1,33 @@
+package com.sathya.sprinbootmvc.entity;
+
+import jakarta.persistence.Entity;
+
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+public class ProductEntity {
+	@Id
+	    private long id;
+		private String Name;
+		private String brand;
+
+		private String madeIn;
+		private int quatity;
+		private double price;
+		private double discountRate;
+		private double taxRate;
+		private double discountPrice;
+		
+		private double offerPrice;
+		private double taxPrice;
+		private double finalrate;
+		private double stockvalue;
+		
+
+}
